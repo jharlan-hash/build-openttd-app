@@ -4,8 +4,8 @@ FOLDER_NAME=.install
 
 start=`date +%s`
 
-chmod a+x /Users/$USER/build-openttd/openttd.sh || exit 1
-INSTALL_PATH=/Users/$USER/build-openttd/
+chmod a+x /Users/$USER/build-openttd-app/openttd.sh || exit 1
+INSTALL_PATH=/Users/$USER/build-openttd-app/
 
 cd
 
