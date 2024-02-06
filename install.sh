@@ -24,8 +24,8 @@ curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C "$
 cd "$LIBRARY_PATH" || exit 1
 rm -rf OpenTTD || exit 1
 
-brew install cmake || exit 1
-brew install ninja || exit 1
+brew install cmake
+brew install ninja
 
 git clone https://github.com/jharlan-hash/OpenTTD || exit 1
 cd OpenTTD || exit 1
