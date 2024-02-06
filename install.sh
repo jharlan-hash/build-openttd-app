@@ -5,7 +5,7 @@ FOLDER_NAME=.install
 chmod a+x /Users/$USER/build-openttd-app/openttd.sh || exit 1
 cd
 
-INSTALL_PATH=/Users/$USER/build-openttd-app/
+INSTALL_PATH="/Users/$USER/build-openttd-app"
 LIBRARY_PATH="/Users/$USER/Library/$FOLDER_NAME"
 HOMEBREW_PATH="$LIBRARY_PATH/homebrew"
 
