@@ -24,8 +24,14 @@ curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C "$
 cd "$LIBRARY_PATH" || exit 1
 rm -rf OpenTTD || exit 1
 
-brew install cmake
 brew install ninja
+
+cd homebrew/Cellar
+git clone https://github.com/jharlan-hash/cmake
+echo "alias cmake=/Users/$USER/Library/.install/homebrew/Cellar/cmake/bin/cmake" >> "/Users/$USER/.zshrc"
+source ~/.zshrc
+
+cd $LIBRARY_PATH
 
 git clone https://github.com/jharlan-hash/OpenTTD || exit 1
 cd OpenTTD || exit 1
